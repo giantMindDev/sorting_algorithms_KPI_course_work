@@ -138,39 +138,39 @@ void runBucketSort(int demo = 0) {
 
   switch(demo) {
     case 1:
-      cout << "Bucket Sort - demo 1000 ASC" << endl;
+      cout << "\t\tBucket Sort - demo 1000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/bucket1000asc.txt");
       break;
     case 2:
-      cout << "Bucket Sort - demo 1000 DESC" << endl;
+      cout << "\t\tBucket Sort - demo 1000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/bucket1000desc.txt");
       break;
     case 3:
-      cout << "Bucket Sort - demo 1000 random" << endl;
+      cout << "\t\tBucket Sort - demo 1000 random" << endl;
       rawArray = randomArray(1000, 100);
       break;
     case 4:
-      cout << "Bucket Sort - demo 10000 ASC" << endl;
+      cout << "\t\tBucket Sort - demo 10000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/bucket10000asc.txt");
       break;
     case 5:
-      cout << "Bucket Sort - demo 10000 DESC" << endl;
+      cout << "\t\tBucket Sort - demo 10000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/bucket10000desc.txt");
       break;
     case 6:
-      cout << "Bucket Sort - demo 10000 random" << endl;
+      cout << "\t\tBucket Sort - demo 10000 random" << endl;
       rawArray = randomArray(10000, 100);
       break;
     case 7:
-      cout << "Bucket Sort - demo 100000 ASC" << endl;
+      cout << "\t\tBucket Sort - demo 100000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/bucket100000asc.txt");
       break;
     case 8:
-      cout << "Bucket Sort - demo 100000 DESC" << endl;
+      cout << "\t\tBucket Sort - demo 100000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/bucket100000desc.txt");
       break;
     case 9:
-      cout << "Bucket Sort - demo 100000 random" << endl;
+      cout << "\t\tBucket Sort - demo 100000 random" << endl;
       rawArray = randomArray(100000, 100);
       break;
     default:
@@ -184,12 +184,12 @@ void runBucketSort(int demo = 0) {
   }
   int n = sizeof(arr) / sizeof(arr[0]);
 
-  cout << "Bucket Sort start" << endl;
+  cout << "\t\tBucket Sort start" << endl;
   bucketSort(arr, n);
   outputFile(arr, n);
 
-  cout << "Compares = " << bucket_compare << endl;
-  cout << "Exchanges = " << bucket_exchange << endl;
+  cout << "\t\tCompares = " << bucket_compare << endl;
+  cout << "\t\tExchanges = " << bucket_exchange << endl;
   bucket_compare = 0;
   bucket_exchange = 0;
 

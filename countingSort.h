@@ -66,39 +66,39 @@ void runCountingSort(int demo = 0) {
 
   switch(demo) {
     case 1:
-      cout << "Counting Sort - demo 1000 ASC" << endl;
+      cout << "\t\tCounting Sort - demo 1000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/counting1000asc.txt");
       break;
     case 2:
-      cout << "Counting Sort - demo 1000 DESC" << endl;
+      cout << "\t\tCounting Sort - demo 1000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/counting1000desc.txt");
       break;
     case 3:
-      cout << "Counting Sort - demo 1000 random" << endl;
+      cout << "\t\tCounting Sort - demo 1000 random" << endl;
       rawArray = randomArray(1000, 10);
       break;
     case 4:
-      cout << "Counting Sort - demo 10000 ASC" << endl;
+      cout << "\t\tCounting Sort - demo 10000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/counting10000asc.txt");
       break;
     case 5:
-      cout << "Counting Sort - demo 10000 DESC" << endl;
+      cout << "\t\tCounting Sort - demo 10000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/counting10000desc.txt");
       break;
     case 6:
-      cout << "Counting Sort - demo 10000 random" << endl;
+      cout << "\t\tCounting Sort - demo 10000 random" << endl;
       rawArray = randomArray(10000, 10);
       break;
     case 7:
-      cout << "Counting Sort - demo 100000 ASC" << endl;
+      cout << "\t\tCounting Sort - demo 100000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/counting100000asc.txt");
       break;
     case 8:
-      cout << "Counting Sort - demo 100000 DESC" << endl;
+      cout << "\t\tCounting Sort - demo 100000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/counting100000desc.txt");
       break;
     case 9:
-      cout << "Counting Sort - demo 100000 random" << endl;
+      cout << "\t\tCounting Sort - demo 100000 random" << endl;
       rawArray = randomArray(100000, 10);
       break;
     default:
@@ -115,12 +115,12 @@ void runCountingSort(int demo = 0) {
   
   int n = sizeof(arr) / sizeof(arr[0]);
 
-  cout << "Counting Sort start" << endl;
+  cout << "\t\tCounting Sort start" << endl;
   countingSort(arr, n);
   outputFile(arr, n);
 
-  cout << "Compares = " << counting_compare << endl;
-  cout << "Exchanges = " << counting_exchange << endl;
+  cout << "\t\tCompares = " << counting_compare << endl;
+  cout << "\t\tExchanges = " << counting_exchange << endl;
   counting_compare = 0;
   counting_exchange = 0;
 

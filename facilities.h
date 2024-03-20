@@ -24,7 +24,7 @@ void outputFile(int array[], int size) {
   }
   outfile << data;
   outfile.close();
-  cout << "Sorted data is stored in the file 'sortedData.txt'." << endl;
+  cout << "\t\tSorted data is stored in the file 'sortedData.txt'." << endl;
 }
 
 // Формування вектора з введених даних
@@ -42,7 +42,7 @@ vector<int> arrayFromInputInt(string rawArray) {
 // Ручний ввід масиву
 string handArray() {
   string rawArray = ""; 
-  cout << "Enter integers divided by spaces\n";
+  cout << "\t\tEnter integers divided by spaces\n";
   cin.clear();
   cin.ignore(numeric_limits<streamsize>::max(), '\n');
   getline(cin, rawArray);
@@ -66,7 +66,7 @@ string arrayFromFile (string pathToFile) {
   if ( testFile.is_open() ) {
     getline(testFile, rawArray);
   }
-  cout << "Array From File " << pathToFile << endl;
+  cout << "\t\tArray From File " << pathToFile << endl;
   return rawArray;
 }
 
