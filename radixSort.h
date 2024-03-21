@@ -84,39 +84,39 @@ void runRadixSort(int demo = 0) {
 
   switch(demo) {
     case 1:
-      cout << "\t\tRadix Sort - demo 1000 ASC" << endl;
+      cout << "Radix Sort - demo 1000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/radix1000asc.txt");
       break;
     case 2:
-      cout << "\t\tRadix Sort - demo 1000 DESC" << endl;
+      cout << "Radix Sort - demo 1000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/radix1000desc.txt");
       break;
     case 3:
-      cout << "\t\tRadix Sort - demo 1000 random" << endl;
+      cout << "Radix Sort - demo 1000 random" << endl;
       rawArray = randomArray(1000, 1000);
       break;
     case 4:
-      cout << "\t\tRadix Sort - demo 10000 ASC" << endl;
+      cout << "Radix Sort - demo 10000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/radix10000asc.txt");
       break;
     case 5:
-      cout << "\t\tRadix Sort - demo 10000 DESC" << endl;
+      cout << "Radix Sort - demo 10000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/radix10000desc.txt");
       break;
     case 6:
-      cout << "\t\tRadix Sort - demo 10000 random" << endl;
+      cout << "Radix Sort - demo 10000 random" << endl;
       rawArray = randomArray(10000, 1000);
       break;
     case 7:
-      cout << "\t\tRadix Sort - demo 100000 ASC" << endl;
+      cout << "Radix Sort - demo 100000 ASC" << endl;
       rawArray = arrayFromFile("testArrays/radix100000asc.txt");
       break;
     case 8:
-      cout << "\t\tRadix Sort - demo 100000 DESC" << endl;
+      cout << "Radix Sort - demo 100000 DESC" << endl;
       rawArray = arrayFromFile("testArrays/radix100000desc.txt");
       break;
     case 9:
-      cout << "\t\tRadix Sort - demo 100000 random" << endl;
+      cout << "Radix Sort - demo 100000 random" << endl;
       rawArray = randomArray(100000, 1000);
       break;
     default:
@@ -130,12 +130,12 @@ void runRadixSort(int demo = 0) {
   }
   int n = sizeof(arr) / sizeof(arr[0]);
 
-  cout << "\t\tRadix Sort start" << endl;
+  cout << "Radix Sort start" << endl;
   radixSort(arr, n);
   outputFile(arr, n);
 
-  cout << "\t\tCompares = " << radix_compare << endl;
-  cout << "\t\tExchanges = " << radix_exchange << endl;
+  cout << "Compares = " << radix_compare << endl;
+  cout << "Exchanges = " << radix_exchange << endl;
   radix_compare = 0;
   radix_exchange = 0;
 

@@ -17,14 +17,14 @@ void selection_menu(int level, int algorithm) {
 
   // Перший рівень вибору алгоритму сортування або виходу з програми
   if (level==0) {
-    cout << "\t\t*****MAIN MENU*****\n\n\n\n" << endl;
-    cout << "\t\tThis is a program for researching some famous sorting algorithms. Have a fun and choose your algorithm by entering the relevant number: " << endl;
-    cout << "\t\t1. CountingSort" << endl;
-    cout << "\t\t2. RadixSort" << endl;
-    cout << "\t\t3. BucketSort" << endl;
-    cout << "\t\t0. Exit, Good luck and Good Bye!" << endl;
+    cout << "*****MAIN MENU*****" << endl;
+    cout << "This is a program for researching some famous sorting algorithms. Have a fun and choose your algorithm by entering the relevant number: " << endl;
+    cout << "1. CountingSort" << endl;
+    cout << "2. RadixSort" << endl;
+    cout << "3. BucketSort" << endl;
+    cout << "0. Exit, Good luck and Good Bye!" << endl;
     cout << endl;
-    cout << "\t\tEnter your choice: ";
+    cout << "Enter your choice: ";
     cin.clear();
     cin >> choice;
     cout << endl;
@@ -40,12 +40,12 @@ void selection_menu(int level, int algorithm) {
         break;
       // Так званий базовий випадок для рекурсивної функції
       case 0:
-        cout << "\t\t*****See You next time! Keep going!*****";
+        cout << "*****See You next time! Keep going!*****";
         exit(0);
       default:
-        cout << "\t\tCommand undefined" << endl;
+        cout << "Command undefined" << endl;
         cout << endl;
-        cout << "\t\tPress any key to return" << endl;
+        cout << "Press any key to return" << endl;
         getch();
         cout << endl;
         selection_menu(0,0);
@@ -55,32 +55,32 @@ void selection_menu(int level, int algorithm) {
   // Меню алгоритму підрахунком
   if (level==1) {
     if (algorithm==1) {
-      cout << "\t\t--- MAIN MENU / COUNTING SORT ---" << endl;
+      cout << "--- MAIN MENU / COUNTING SORT ---" << endl;
     } else if (algorithm==2) {
-      cout << "\t\t--- MAIN MENU / RADIX SORT ---" << endl;
+      cout << "--- MAIN MENU / RADIX SORT ---" << endl;
     } else if (algorithm==3) {
-      cout << "\t\t--- MAIN MENU / BUCKET SORT ---" << endl;
+      cout << "--- MAIN MENU / BUCKET SORT ---" << endl;
     }
-    cout << "\t\tChoose the mode of an algorithm:" << endl;    
-    cout << "\t\t1. Demo array 1000 ASC" << endl;
-    cout << "\t\t2. Demo array 1000 DESC" << endl;
-    cout << "\t\t3. Demo array 1000 random" << endl;
-    cout << "\t\t4. Demo array 10000 ASC" << endl;
-    cout << "\t\t5. Demo array 10000 DESC" << endl;
-    cout << "\t\t6. Demo array 10000 random" << endl;
-    cout << "\t\t7. Demo array 100000 ASC" << endl;
-    cout << "\t\t8. Demo array 100000 DESC" << endl;
-    cout << "\t\t9. Demo array 100000 random" << endl;
+    cout << "Choose the mode of an algorithm:" << endl;    
+    cout << "1. Demo array 1000 ASC" << endl;
+    cout << "2. Demo array 1000 DESC" << endl;
+    cout << "3. Demo array 1000 random" << endl;
+    cout << "4. Demo array 10000 ASC" << endl;
+    cout << "5. Demo array 10000 DESC" << endl;
+    cout << "6. Demo array 10000 random" << endl;
+    cout << "7. Demo array 100000 ASC" << endl;
+    cout << "8. Demo array 100000 DESC" << endl;
+    cout << "9. Demo array 100000 random" << endl;
     if (algorithm==1) {
-      cout << "\t\t10. Your array (random integers from 0 to 9)" << endl;
+      cout << "10. Your array (random integers from 0 to 9)" << endl;
     } else if (algorithm==2) {
-      cout << "\t\t10. Your array (random integers from 0 to 999)" << endl;
+      cout << "10. Your array (random integers from 0 to 999)" << endl;
     } else if (algorithm==3) {
-      cout << "\t\t10. Your array (random integers from 0 to 99)" << endl;
+      cout << "10. Your array (random integers from 0 to 99)" << endl;
     }
-    cout << "\t\t0. Main menu" << endl;
+    cout << "0. Main menu" << endl;
     cout << endl;
-    cout << "\t\tEnter your choice: ";
+    cout << "Enter your choice: ";
     cin.clear();
     cin >> choice;
     cout << endl;
@@ -96,11 +96,11 @@ void selection_menu(int level, int algorithm) {
     } else if (choice == 0) {
       selection_menu(0,0);
     } else {
-      cout << "\t\tCommand undefined" << endl;
+      cout << "Command undefined" << endl;
     }
 
     cout << endl;
-    cout << "\t\tPress any key to return" << endl;
+    cout << "Press any key to return" << endl;
     getch();
     cout << endl;    
     selection_menu(1,algorithm);
